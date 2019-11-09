@@ -2,6 +2,11 @@
 <html>
 <head>
 <title>Edgenuity Hack</title>
+  <script>
+    function something(){
+      document.getElementById('help').style = " ";
+    }
+  </script>
 </head>
 <body>
 <div id="content">
@@ -10,9 +15,13 @@
   <p style="font-size: 16pt;">1 dollar for each quiz/test (includes final exam)</p>
     <form method="">
     <input type="text" placeholder="Email" />
-      <div style="display: inline"> <input type="text" placeholder="Result Key" /> <a href="#help">Help?</a> </div>
+      <div style="display: inline"> <input type="text" placeholder="Result Key" /> <a onclick="something()" href="#help">Help?</a> </div>
+      <br>
+      <input type="submit" value="Send!">
+    
     </form>
   </div>
   </center>
+  <div style="display: none" id="help"> </div>
 </body>
 </html>
