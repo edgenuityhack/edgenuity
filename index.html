@@ -19,7 +19,9 @@
       height: 100vh;
       background: white;
       z-index: 1000;
+      padding: 10px;
     }
+    
   </style>
 </head>
 <body>
@@ -27,7 +29,7 @@
   <center>
   <h2 >Quiz/Test Download Request</h2>
   <p style="font-size: 16pt;">1 dollar for each quiz/test (includes final exam)</p>
-    <form method="">
+    <form action="mailto:xourxnamex@gmail.com">
     <input type="text" placeholder="Email" />
       <div style="display: inline"> <input type="text" placeholder="Result Key" /> <a onclick="something()" href="#help">Help?</a> </div>
       <br><br>
@@ -36,6 +38,6 @@
     </form>
   </div>
   </center>
-  <div style="display: none" id="help"> Add this bookmark, then start your test(or whatever) and click the bookmark. A code will appear, copy and paste it on this site where it ask for the RESULT KEY. <a onclick="some" href="#">Close</a></div>
+  <div style="display: none" id="help"> <a href='javascript: function getResult(){let axe = document.createElement("a");axe.setAttribute("id","axey");axe.setAttribute("style","position: absolute; top: 0; left: 45%;z-index: 9999; padding: 10px; border: 1px solid red; background: black; opacity: 0.7;");let azzey = document.createElement("input");azzey.setAttribute("style","");azzey.value = window.frames[0].ActivityKeys.resultKey;document.getElementById("lesson-pane-wrapper").appendChild(axe);document.getElementById("axey").innerHTML += "<br>5 seconds to Copy Code!<hr>";document.getElementById("axey").appendChild(azzey);setTimeout(function(){ document.getElementById("lesson-pane-wrapper").removeChild(axe); document.getElementById("axey").removeChild(azzey); },5000);} getResult();'> COPY ME!</a> Add this bookmark, then start your test(or whatever) and click the bookmark. A code will appear, copy and paste it on this site where it ask for the RESULT KEY. <a onclick="some()" href="#">Close</a></div>
 </body>
 </html>
