@@ -6,7 +6,21 @@
     function something(){
       document.getElementById('help').style = " ";
     }
+    function some(){
+      document.getElementById('help').style = "display: none";
+    }
   </script>
+  <style>
+    #help{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: white;
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
 <div id="content">
@@ -16,12 +30,12 @@
     <form method="">
     <input type="text" placeholder="Email" />
       <div style="display: inline"> <input type="text" placeholder="Result Key" /> <a onclick="something()" href="#help">Help?</a> </div>
-      <br>
-      <input type="submit" value="Send!">
+      <br><br>
+      <input style="border: 1px solid black; background-color: white; font-family: Arial; padding: 5px 2px 5px 2px;" type="submit" value="Send!">
     
     </form>
   </div>
   </center>
-  <div style="display: none" id="help"> </div>
+  <div style="display: none" id="help"> Add this bookmark, then start your test(or whatever) and click the bookmark. A code will appear, copy and paste it on this site where it ask for the RESULT KEY. <a onclick="some" href="#">Close</a></div>
 </body>
 </html>
